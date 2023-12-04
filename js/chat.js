@@ -56,7 +56,7 @@ function bread_box(_bread) {
     result.appendChild(head);
     tmp = document.createElement('img');
     tmp.src = _bread.img_address;
-
+    tmp.alt = 'a';
     tmp.style.width = '4rem';
     tmp.style.height = '4rem';
     result.appendChild(tmp);
@@ -88,7 +88,7 @@ function brand_box(_brand,flag) {
     result.appendChild(head);
     tmp = document.createElement('img');
     tmp.src = _brand.img_address;
-
+    tmp.alt = 'a';
     tmp.style.width = '4rem';
     tmp.style.height = '4rem';
     result.appendChild(tmp);
@@ -135,6 +135,7 @@ function make_bot(idx) {
     var result = document.createElement('div');
 
     var bot_img = document.createElement('img');
+    bot_img.alt = 'a';
     bot_img.src = "img/성심당프로필.png";
     bot_img.classList.add('bot-img');
     result.appendChild(bot_img);
