@@ -148,6 +148,7 @@ var tree = [
             content_scroll.classList.add('hidden-scroll');
             content_scroll.style.overflow = "scroll";
             content_scroll.style.height = "20rem";
+            content_scroll.style.width = "15rem";
             content_scroll.style.paddingRight = "0.2rem";
 
             for (var i = 0; i < brands.length; i++) {
@@ -163,10 +164,10 @@ var tree = [
                 }
             }
             result.appendChild(content_scroll);
-            // result.addEventListener('click', (e) => {
-            //     console.log('sssss');
-            // });
-            // result.classList.add('adsf');
+            result.addEventListener('click', (e) => {
+                console.log('sssss');
+            });
+            result.classList.add('adsf');
             bot_content.appendChild(result);
         },
         [0]

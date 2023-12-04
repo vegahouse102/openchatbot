@@ -71,10 +71,11 @@ function brand_box(_brand) {
     var head = document.createElement('div');
     var tmp = document.createElement('div');
     tmp.innerHTML = _brand.name;
+    tmp.style.fontSize = '1rem';
     head.appendChild(tmp);
     tmp = document.createElement('div');
     tmp.innerHTML = _brand.address;
-    tmp.style.fontSize = '0.8rem';
+    tmp.style.fontSize = '0.7rem';
 
     head.appendChild(tmp);
     head.style.display = 'flex';
