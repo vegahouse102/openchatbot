@@ -126,13 +126,17 @@ var tree = [
         (bot_content) => {
             var result = document.createElement('div');
             result.innerHTML = "성심당은 1956년에 설립되었으며, 국내에서 가장 오래된 빵집 중 하나로 알려져 있습니다. ";
+            result.style.maxWidth = "15rem";
             bot_content.appendChild(result);
             var result = document.createElement('div');
             result.innerHTML = "성심당 창업주 故임길순·故한순덕 부부는 함경남도 함주 고향으로 1950년 한국전쟁 중 흥남부두 철수작전 마지막 피난민을 싣은 메러디스빅토리호에 기적적으로 몸을 싣어, 잠시 거제도에 머문 뒤 진해에 정착했습니다. ";
+            result.style.maxWidth = "15rem";
             bot_content.appendChild(result);
             var result = document.createElement('div');
             result.innerHTML = "이후 서울로 이주하고자 열차를 타고 이동하던 중 열차 고장으로 의도치 않게 대전에 머물게 되었고 대흥동성당에서 원조 받은 밀가루 두 포대로 대전역 앞에서 찐빵집을 시작해 오늘날의 성심당이 되었습니다.";
+            result.style.maxWidth = "15rem";
             bot_content.appendChild(result);
+            result.style.maxWidth = "15rem";
         },
         [0]
     ),
