@@ -100,8 +100,6 @@ function brand_box(_brand,flag) {
         result.style.backgroundColor = '#FFE8B9';
     else
         result.style.backgroundColor = '#FFFFFF';
-
-
     result2.appendChild(result);
     result2.href = _brand.site_address;
     result2.style.textDecoration = 'none';
@@ -131,7 +129,6 @@ function tree_implement(idx, flag) {//0 first 1 not first
     }
     make_bot(idx);
     make_buttons(tree[idx].after_buttons);
-    addEvent(idx);
 }
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
@@ -190,9 +187,4 @@ function make_buttons(buttons) {
     }
     var chat_content = document.querySelector("#chat-content");
     chat_content.scrollTop = chat_content.scrollHeight;
-}
-function addEvent(idx) {
-    if (idx) {
-
-    }
 }

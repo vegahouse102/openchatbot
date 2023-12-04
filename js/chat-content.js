@@ -52,7 +52,7 @@ var tree = [
             result.innerHTML = "안녕하세요, 성심당입니다.<br><br> <strong>​운영시간</strong><br> 평일 10:00~18:00<br> - 점심시간(12:00~13:00) 제외 <br>- 주말,공휴일 휴무 <br><br>문의 사항을 아래에서 선택해주세요.";
             bot_content.appendChild(result);
         }
-        , [1, 2, 3, 4]
+        , [1, 2, 3, 4,5]
     ),
     new messege(
         "인기메뉴",
@@ -160,10 +160,8 @@ var tree = [
                 var _brand;
                 if (i % 2 == 0) {
                     _brand = brand_box(brands[i],0);
-                    _brand.style.backgroundColor = "#FFE8B9";
                 } else {
                     _brand = brand_box(brands[i],1);
-                    _brand.style.backgroundColor = "#FFFFFF";
                 }
                 content_scroll.appendChild(_brand);
                 if (i != brands.length - 1) {
@@ -181,9 +179,16 @@ var tree = [
     ),
 
     new messege(
-        "매장 지도",
+        "매장내 지도",
         (bot_content) => {
-
+            
+        },
+        [0]
+    ),
+    new messege(
+        "주차장 위치",
+        (bot_content) => {
+            
         },
         [0]
     )
