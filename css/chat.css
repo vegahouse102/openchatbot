@@ -36,7 +36,7 @@ body{
 #chat-body{
     box-sizing: border-box;
     height: 80vh;
-    width:calc(80vh*5/10);
+    width:calc(80vh*5/8);
     right:4rem;
     bottom:4rem;
     position: fixed;
