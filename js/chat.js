@@ -67,6 +67,7 @@ function bread_box(_bread) {
     return result;
 }
 function brand_box(_brand) {
+    var result2 = document.createElement('a');
     var result = document.createElement('div');
     var head = document.createElement('div');
     var tmp = document.createElement('div');
@@ -95,7 +96,11 @@ function brand_box(_brand) {
     result.style.display = 'flex';
     result.style.justifyContent = 'space-between';
     result.style.height = "4rem";
-    return result;
+    result2.appendChild(result);
+    result2.href = _brand.site_address;
+    result2.style.textDecoration = 'none';
+    result2.style.color = 'black';
+    return result2;
 }
 function init() {
     var chat_content = document.querySelector('#chat-content');

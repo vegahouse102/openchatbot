@@ -8,10 +8,11 @@ function bread(name, price, img_address) {
     this.price = price;
     this.img_address = img_address;
 }
-function brand(name, address, img_address) {
+function brand(name, address, img_address,site_address) {
     this.name = name;
     this.address = address;
     this.img_address = img_address;
+    this.site_address = site_address;
 }
 const breads = [
     new bread("보문산메아리", "6,000원", "img/breads/보문산메아리.jpg"),
@@ -30,18 +31,18 @@ const breads = [
     new bread("교황님의 치즈스콘", "4,000원", "img/breads/교황님의 치즈스콘.jpg")
 ];
 const brands = [
-    new brand("성심당 본점", '대전광역시 중구 대종로 <br>480번길 15 (은행동 145)', "img/brands/성심당본점.JPG"),
-    new brand("성심당 케익부띠끄", '대전광역시 중구 대종로 480', "img/brands/성심당 케익부띠끄.JPG"),
-    new brand("성심당 DCC점", '대전광역시 유성구 엑스포로107<br>(도룡동 4-19) 대전컨벤션센터1F', "img/brands/성심당 DCC점.JPG"),
-    new brand("성심당 롯데백화점 대전점", '대전광역시 서구 계룡로 598', "img/brands/성심당 롯데백화점.JPG"),
-    new brand("성심당 대전역점", '대전광역시 동구 중앙로 215', "img/brands/성심당 대전역점.JPG"),
-    new brand("성심당 옛맛솜씨", '대전광역시 중구 대종로 480길 14', "img/brands/성심당 옛맛 솜씨.JPG"),
-    new brand("성심당문화원", '대전광역시 중구 중교로73번길 11', "img/brands/성심당문화원.JPG"),
-    new brand("테라스키친", '대전광역시 중구 대종로480번길 15, 2F', "img/brands/테라스키친.JPG"),
-    new brand("플라잉팬", '대전광역시 중구 대종로 480 2F', "img/brands/플라잉팬.JPG"),
-    new brand("우동야", '대전광역시 중구 대종로480번길 15<br> 지하상가 D가-22', "img/brands/우동야.JPG"),
-    new brand("삐아또", '대전광역시 중구 중앙로156번길 28', "img/brands/삐아또.JPG"),
-    new brand("오븐스토리", '대전 중구 대종로 605 1F', "img/brands/오븐스토리.JPG")
+    new brand("성심당 본점", '대전광역시 중구 대종로 <br>480번길 15 (은행동 145)', "img/brands/성심당본점.JPG",'https://www.sungsimdang.co.kr/31/15'),
+    new brand("성심당 케익부띠끄", '대전광역시 중구 대종로 480', "img/brands/성심당 케익부띠끄.JPG",'https://www.sungsimdang.co.kr/31/16'),
+    new brand("성심당 DCC점", '대전광역시 유성구 엑스포로107<br>(도룡동 4-19) 대전컨벤션센터1F', "img/brands/성심당 DCC점.JPG",'https://www.sungsimdang.co.kr/31/17'),
+    new brand("성심당 롯데백화점 대전점", '대전광역시 서구 계룡로 598', "img/brands/성심당 롯데백화점.JPG",'https://www.sungsimdang.co.kr/31/18'),
+    new brand("성심당 대전역점", '대전광역시 동구 중앙로 215', "img/brands/성심당 대전역점.JPG",'https://www.sungsimdang.co.kr/31/19'),
+    new brand("성심당 옛맛솜씨", '대전광역시 중구 대종로 480길 14', "img/brands/성심당 옛맛 솜씨.JPG",'https://www.sungsimdang.co.kr/31/24'),
+    new brand("성심당문화원", '대전광역시 중구 중교로73번길 11', "img/brands/성심당문화원.JPG",'https://www.sungsimdang.co.kr/31/26'),
+    new brand("테라스키친", '대전광역시 중구 대종로480번길 15, 2F', "img/brands/테라스키친.JPG",'https://www.sungsimdang.co.kr/31/20'),
+    new brand("플라잉팬", '대전광역시 중구 대종로 480 2F', "img/brands/플라잉팬.JPG",'https://www.sungsimdang.co.kr/31/21'),
+    new brand("우동야", '대전광역시 중구 대종로480번길 15<br> 지하상가 D가-22', "img/brands/우동야.JPG",'https://www.sungsimdang.co.kr/31/22'),
+    new brand("삐아또", '대전광역시 중구 중앙로156번길 28', "img/brands/삐아또.JPG",'https://www.sungsimdang.co.kr/31/23'),
+    new brand("오븐스토리", '대전 중구 대종로 605 1F', "img/brands/오븐스토리.JPG",'https://www.sungsimdang.co.kr/31/25')
 ];
 var tree = [
     new messege(
