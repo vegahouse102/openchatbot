@@ -66,7 +66,7 @@ function bread_box(_bread) {
     result.style.height = "4rem";
     return result;
 }
-function brand_box(_brand) {
+function brand_box(_brand,flag) {
     var result2 = document.createElement('a');
     var result = document.createElement('div');
     var head = document.createElement('div');
@@ -96,6 +96,12 @@ function brand_box(_brand) {
     result.style.display = 'flex';
     result.style.justifyContent = 'space-between';
     result.style.height = "4rem";
+    if(flag==0)
+        result.style.backgroundColor = '#FFE8B9';
+    else
+        result.style.backgroundColor = '#FFFFFF';
+
+
     result2.appendChild(result);
     result2.href = _brand.site_address;
     result2.style.textDecoration = 'none';

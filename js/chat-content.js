@@ -157,10 +157,12 @@ var tree = [
             content_scroll.style.paddingRight = "0.2rem";
 
             for (var i = 0; i < brands.length; i++) {
-                var _brand = brand_box(brands[i]);
+                var _brand;
                 if (i % 2 == 0) {
+                    _brand = brand_box(brands[i],0);
                     _brand.style.backgroundColor = "#FFE8B9";
                 } else {
+                    _brand = brand_box(brands[i],1);
                     _brand.style.backgroundColor = "#FFFFFF";
                 }
                 content_scroll.appendChild(_brand);
