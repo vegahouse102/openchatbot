@@ -132,7 +132,7 @@ function brand_locate(brand) {
     tmp = document.createElement('div');
     tmp.style.marginTop = '1.5rem';
     tmp.innerText = '오시는 길';
-    tmp.width = '10rem';
+    tmp.minWidth = '10rem';
     tmp.style.marginRight = '0.5rem';
     content.appendChild(tmp);
 
@@ -141,7 +141,7 @@ function brand_locate(brand) {
     tmp.innerText = brand.address;
     tmp.style.marginBottom = '1.5rem';
     content.appendChild(tmp);
-    content.style.display = 'flex';
+    content.style.display = 'block';
     result.appendChild(content);
 
     result.appendChild(document.createElement('hr'));
@@ -150,7 +150,7 @@ function brand_locate(brand) {
     tmp = document.createElement('div');
     tmp.style.marginTop = '1.5rem';
     tmp.innerText = '영업시간';
-    tmp.width = '10rem';
+    tmp.minWidth = '10rem';
     tmp.style.marginRight = '0.5rem';
     content.appendChild(tmp);
 
@@ -159,7 +159,7 @@ function brand_locate(brand) {
     tmp.innerText = brand.work_time;
     tmp.style.marginBottom = '1.5rem';
     content.appendChild(tmp);
-    content.style.display = 'flex';
+    content.style.display = 'block';
     result.appendChild(content);
 
     result.appendChild(document.createElement('hr'));
@@ -173,20 +173,27 @@ function brand_locate(brand) {
     content.appendChild(tmp);
 
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
+    tmp.style.marginTop = '1rem';
     tmp.innerText = brand.phone;
-    tmp.style.marginBottom = '1.5rem';
+    tmp.style.marginBottom = '1rem';
     content.appendChild(tmp);
-    content.style.display = 'flex';
+    content.style.display = 'block';
     result.appendChild(content);
 
+    var content_box = document.createElement('div');
     content = document.createElement('a');
     tmp = document.createElement('div');
     tmp.innerText = '지도 보기';
     content.appendChild(tmp);
     content.href = brand.naver_location;
-
-    result.appendChild(content);
+    content.target = '_blank';
+    content.style.textAlign = 'center';
+    content_box.appendChild(content);
+    content_box.style.backgroundColor = '#FFE8B9';
+    result.style.position = 'relative';
+    content_box.style.postion = 'absolute';
+    content_box.style.bottom = '0';
+    result.appendChild(content_box);
     return result;
 }
 function init() {
