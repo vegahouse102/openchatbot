@@ -66,7 +66,7 @@ function bread_box(_bread) {
     result.style.height = "4rem";
     return result;
 }
-function brand_box(_brand,flag) {
+function brand_box(_brand, flag) {
     var result2 = document.createElement('a');
     var result = document.createElement('div');
     var head = document.createElement('div');
@@ -96,7 +96,7 @@ function brand_box(_brand,flag) {
     result.style.display = 'flex';
     result.style.justifyContent = 'space-between';
     result.style.height = "4rem";
-    if(flag==0)
+    if (flag == 0)
         result.style.backgroundColor = '#FFE8B9';
     else
         result.style.backgroundColor = '#FFFFFF';
@@ -129,6 +129,12 @@ function tree_implement(idx, flag) {//0 first 1 not first
     }
     make_bot(idx);
     make_buttons(tree[idx].after_buttons);
+    // var result = document.querySelectorAll('.asdf');
+    // result.forEach((element) => {
+    //     element.addEventListener('click', () => {
+    //         console.log('success');
+    //     });
+    // });
 }
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
@@ -147,9 +153,11 @@ function make_bot(idx) {
     chat_bot_content.appendChild(bot_name);
 
     var chat_bot_content_box = document.createElement('div');
-    chat_bot_content_box.classList.add('bot-messege');
 
     tree[idx].func(chat_bot_content_box);
+    chat_bot_content_box.classList.add('bot-messege');
+
+
 
     chat_bot_content.appendChild(chat_bot_content_box);
     result.appendChild(chat_bot_content);
@@ -168,7 +176,9 @@ function make_box(str, flag) {//0 user 1 bot
     return result;
 }
 function make_buttons(buttons) {
-    document.querySelector("#chat-content").innerHTML += '<div id="chat-buttons"></div>';
+    var tmp = document.createElement('div');
+    tmp.id = 'chat-buttons';
+    document.querySelector("#chat-content").appendChild(tmp);
     var chat_buttons = document.querySelector("#chat-buttons");
     for (var idx of buttons) {
         var result = document.createElement('div');
