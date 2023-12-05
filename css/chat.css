@@ -182,6 +182,9 @@ body{
     body::-webkit-scrollbar {
         display:none;
       }
+    #chat-content::-webkit-scrollbar {
+        display:none;
+      }
     #chat-head{
         min-height: 4%;
         height:3rem;
@@ -195,8 +198,8 @@ body{
         transform:none;
     }
     .bot-img{
-        width:3rem;
-        height: 3rem;
+        width:1.5rem;
+        height: 1.5rem;
         margin-left:0.4rem;
         border-radius: 1.5rem;
     }

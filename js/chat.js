@@ -179,7 +179,7 @@ function make_buttons(buttons) {
     var tmp = document.createElement('div');
     tmp.id = 'chat-buttons';
     document.querySelector("#chat-content").appendChild(tmp);
-    var chat_buttons = document.querySelector("#chat-buttons");
+    var chat_buttons = tmp;
     for (var idx of buttons) {
         var result = document.createElement('div');
         result.innerText = tree[idx].button_text;

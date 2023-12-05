@@ -117,7 +117,7 @@ var tree = [
                 }
                 result.appendChild(content_scroll);
             }
-            result.style.width = '15rem';
+            result.style.width = '10rem';
             bot_content.appendChild(result);
         },
         [0]
