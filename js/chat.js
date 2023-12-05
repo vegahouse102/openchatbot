@@ -113,7 +113,7 @@ function brand_locate(brand) {
 
     tmp = document.createElement('div');
     tmp.textContent = brand.explain;
-    tmp.style.marginBottom = '2rem';
+    tmp.style.marginBottom = '1rem';
     tmp.style.wordWrap = 'break-all';
     tmp.style.overflowWrap = 'break-all';
     result.appendChild(tmp);
@@ -123,23 +123,23 @@ function brand_locate(brand) {
     tmp.src = brand.img_address;
     tmp.classList.add('bot-messege-img');
     content.appendChild(tmp);
-    content.style.marginBottom = '2rem';
+    content.style.marginBottom = '1rem';
     content.style.textAlign = 'center';
     result.appendChild(content);
     result.appendChild(document.createElement('hr'));
 
     content = document.createElement('div');
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
+    tmp.style.marginTop = '1rem';
     tmp.innerText = '오시는 길';
     tmp.minWidth = '10rem';
     tmp.style.marginRight = '0.5rem';
     content.appendChild(tmp);
 
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
+    tmp.style.marginTop = '1rem';
     tmp.innerText = brand.address;
-    tmp.style.marginBottom = '1.5rem';
+    tmp.style.marginBottom = '1rem';
     content.appendChild(tmp);
     content.style.display = 'block';
     result.appendChild(content);
@@ -148,16 +148,16 @@ function brand_locate(brand) {
 
     content = document.createElement('div');
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
+    tmp.style.marginTop = '1rem';
     tmp.innerText = '영업시간';
     tmp.minWidth = '10rem';
     tmp.style.marginRight = '0.5rem';
     content.appendChild(tmp);
 
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
-    tmp.innerText = brand.work_time;
-    tmp.style.marginBottom = '1.5rem';
+    tmp.style.marginTop = '1rem';
+    tmp.innerHTML = brand.work_time;
+    tmp.style.marginBottom = '1rem';
     content.appendChild(tmp);
     content.style.display = 'block';
     result.appendChild(content);
@@ -166,7 +166,7 @@ function brand_locate(brand) {
 
     content = document.createElement('div');
     tmp = document.createElement('div');
-    tmp.style.marginTop = '1.5rem';
+    tmp.style.marginTop = '1rem';
     tmp.innerText = '전화번호';
     tmp.width = '10rem';
     tmp.style.marginRight = '0.5rem';
