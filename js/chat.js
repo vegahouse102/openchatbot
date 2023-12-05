@@ -107,12 +107,86 @@ function brand_locate(brand) {
     var tmp = document.createElement('div');
     tmp.innerText = brand.name;
     // tmp.style.fontWeight = 'bold'
-    tmp.style.marginBottom = '2rem';
+    tmp.style.marginBottom = '1.5rem';
+    tmp.style.fontSize = '1.2rem';
     result.appendChild(tmp);
 
     tmp = document.createElement('div');
     tmp.textContent = brand.explain;
+    tmp.style.marginBottom = '2rem';
+    tmp.style.wordWrap = 'break-all';
+    tmp.style.overflowWrap = 'break-all';
     result.appendChild(tmp);
+
+    var content = document.createElement('div');
+    tmp = document.createElement('img');
+    tmp.src = brand.img_address;
+    tmp.classList.add('bot-messege-img');
+    content.appendChild(tmp);
+    content.style.marginBottom = '2rem';
+    content.style.textAlign = 'center';
+    result.appendChild(content);
+    result.appendChild(document.createElement('hr'));
+
+    content = document.createElement('div');
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = '오시는 길';
+    tmp.width = '10rem';
+    tmp.style.marginRight = '0.5rem';
+    content.appendChild(tmp);
+
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = brand.address;
+    tmp.style.marginBottom = '1.5rem';
+    content.appendChild(tmp);
+    content.style.display = 'flex';
+    result.appendChild(content);
+
+    result.appendChild(document.createElement('hr'));
+
+    content = document.createElement('div');
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = '영업시간';
+    tmp.width = '10rem';
+    tmp.style.marginRight = '0.5rem';
+    content.appendChild(tmp);
+
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = brand.work_time;
+    tmp.style.marginBottom = '1.5rem';
+    content.appendChild(tmp);
+    content.style.display = 'flex';
+    result.appendChild(content);
+
+    result.appendChild(document.createElement('hr'));
+
+    content = document.createElement('div');
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = '전화번호';
+    tmp.width = '10rem';
+    tmp.style.marginRight = '0.5rem';
+    content.appendChild(tmp);
+
+    tmp = document.createElement('div');
+    tmp.style.marginTop = '1.5rem';
+    tmp.innerText = brand.phone;
+    tmp.style.marginBottom = '1.5rem';
+    content.appendChild(tmp);
+    content.style.display = 'flex';
+    result.appendChild(content);
+
+    content = document.createElement('a');
+    tmp = document.createElement('div');
+    tmp.innerText = '지도 보기';
+    content.appendChild(tmp);
+    content.href = brand.naver_location;
+
+    result.appendChild(content);
     return result;
 }
 function init() {

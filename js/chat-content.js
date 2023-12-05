@@ -37,7 +37,7 @@ const breads = [
 const brands = [
     new brand("성심당 본점", '대전광역시 중구 대종로 480번길 15 (은행동 145)', "img/brands/성심당 본점.JPG", 'https://www.sungsimdang.co.kr/31/15'
         , "대전역 앞 작은 찐빵집, 대전의 문화가 되다.", "매일 : 08:00~22:00 / 연중무휴", "1588-8069", "https://map.naver.com/p/entry/place/11871325?placePath=%2Fhome&c=15.00,0,0,0,dh"),
-    new brand("성심당 케익부띠끄", '대전광역시 중구 대종로 480', "img/brands/성심당 케익부띠끄.JPG", 'https://www.sungsimdang.co.kr/31/16', '성심당만의 다양하고 특별한 케익을 만날수 있는 클래식한 공간', '월화수목금일 : 08:00~21:30 / 토 : 08:00~22:00 / 연중무휴', '1588-8069', 'https://map.naver.com/p/entry/place/35644550?placePath=%2Fhome&c=15.00,0,0,0,dh'),
+    new brand("성심당 케익부띠끄", '대전광역시 중구 대종로 480', "img/brands/성심당 케익부띠끄.JPG", 'https://www.sungsimdang.co.kr/31/16', '성심당만의 다양하고 특별한 케익을 만날 수 있는 클래식한 공간', '월화수목금일 : 08:00~21:30 / 토 : 08:00~22:00 / 연중무휴', '1588-8069', 'https://map.naver.com/p/entry/place/35644550?placePath=%2Fhome&c=15.00,0,0,0,dh'),
     new brand("성심당 DCC점", '대전광역시 유성구 엑스포로107(도룡동 4-19) 대전컨벤션센터1F', "img/brands/성심당 DCC점.JPG", 'https://www.sungsimdang.co.kr/31/17', '대전컨벤션센터를 찾는 세미나. 국제학술대회. 문화행사와 함께 만나는 향토기업 성심당', '1F.빵.매일 : 08:00~22:00 / 1F카페.매일 : 08:00~21:00 / 2F.카페 : 매일 08:00~20:00', '1588-8069', 'https://map.naver.com/p/entry/place/1977855888?placePath=%2Fhome&c=15.00,0,0,0,dh'),
     new brand("성심당 롯데백화점 대전점", '대전광역시 서구 계룡로 598', "img/brands/성심당 롯데백화점.JPG", 'https://www.sungsimdang.co.kr/31/18', '성심당 시그니쳐 스토어. 케익부띠크. 옛맛솜씨. 카페. 감성충전 오븐스토리(B1)', '매일 : 08:00~22:00 / 연중무휴', '1588-8069', 'https://map.naver.com/p/entry/place/1170663310?placePath=%2Fhome&c=15.00,0,0,0,dh'),
     new brand("성심당 대전역점", '대전광역시 동구 중앙로 215', "img/brands/성심당 대전역점.JPG", 'https://www.sungsimdang.co.kr/31/19', '밀가루 두 포대로 대전에서 시작된 성심당. 56년만에 대전역에 입점하다.', '매일 : 07:00~22:30 / 연중무휴', '1588-8069', 'https://map.naver.com/p/entry/place/36731468?placePath=%2Fhome&c=15.00,0,0,0,dh'),
@@ -166,7 +166,7 @@ var tree = [
             content_scroll.style.width = "15rem";
             content_scroll.style.paddingRight = "0.2rem";
 
-            for (let i = 0; i < brands.length; i++) {///////////////////////디버깅위해 아직 안고침
+            for (let i = 0; i < brands.length; i++) {
                 var _brand;
                 if (i % 2 == 0) {
                     _brand = brand_box(brands[i], 0);
