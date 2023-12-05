@@ -67,7 +67,6 @@ function bread_box(_bread) {
     return result;
 }
 function brand_box(_brand, flag) {
-    var result2 = document.createElement('a');
     var result = document.createElement('div');
     var head = document.createElement('div');
     var tmp = document.createElement('div');
@@ -100,11 +99,21 @@ function brand_box(_brand, flag) {
         result.style.backgroundColor = '#FFE8B9';
     else
         result.style.backgroundColor = '#FFFFFF';
-    result2.appendChild(result);
-    result2.href = _brand.site_address;
-    result2.style.textDecoration = 'none';
-    result2.style.color = 'black';
-    return result2;
+    result.style.cursor = 'pointer';
+    return result;
+}
+function brand_locate(brand) {
+    var result = document.createElement('div');
+    var tmp = document.createElement('div');
+    tmp.innerText = brand.name;
+    // tmp.style.fontWeight = 'bold'
+    tmp.style.marginBottom = '2rem';
+    result.appendChild(tmp);
+
+    tmp = document.createElement('div');
+    tmp.textContent = brand.explain;
+    result.appendChild(tmp);
+    return result;
 }
 function init() {
     var chat_content = document.querySelector('#chat-content');
