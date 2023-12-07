@@ -25,16 +25,16 @@
 .bread-price {
     color: black;
     font-size: 22pt;
-    margin-top: 1.5vw;
+    margin-top: 0.5rem;
     font-family: 'OTFPro2';
     font-weight: bold;
     color: #BD8A00;
     border-top: 1px solid rgba(0,0,0,1);
-    padding-top: 2vw;
+    padding-top: 0.5rem;
 }
 .bread-detail {
     display: flex;
-    margin-top: 2vw;
+    margin-top: 0.5rem;
     color: rgba(0, 0, 0, 0.9);
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
@@ -45,27 +45,27 @@
 }
 .detail-left {
     width: 100%;
-    padding-top:5vw;
-    padding-bottom: 2vw;
+    padding-top:1rem;
+    padding-bottom: 1rem;
 }
 .detail-right {
     width: 75%;
-    padding-top:5vw;
-    padding-bottom: 2vw;
-    padding-left: 4vw;
+    padding-top:1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
 }
 .detail-left-font {
     font-weight: bold;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1rem;
     font-family: 'OTFPro2';
     font-size: 11pt;
 }
 .detail-right-font {
-    margin-bottom: 1.5vw;
+    margin-bottom: 1rem;
     font-family: 'OTFPro2';
     font-size: 11pt;
 }
 .detail-border {
     border-top: 1px solid gray;
-    margin-top: 1.5vw;
+    margin-top: 0.5rem;
 }
