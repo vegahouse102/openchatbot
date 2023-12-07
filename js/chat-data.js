@@ -3,10 +3,16 @@ function messege(button_text, func, after_buttons) {
     this.func = func;
     this.after_buttons = after_buttons;
 }
-function bread(name, price, img_address) {
+function bread(name, price, img_address, explain, best_before, storage_method, size, allergy, ingredient) {
     this.name = name;//0한국어 1외국어
     this.price = price;
     this.img_address = img_address;
+    this.explain = explain;
+    this.best_before = best_before;
+    this.storage_method = storage_method;
+    this.size = size;
+    this.allergy = allergy;
+    this.ingredient = ingredient;
 }
 function brand(name, address, img_address, site_address, explain, work_time, phone, naver_location) {
     this.name = name;
@@ -19,7 +25,14 @@ function brand(name, address, img_address, site_address, explain, work_time, pho
     this.naver_location = naver_location;
 }
 const breads = [
-    new bread("보문산메아리", "6,000원", "img/breads/보문산메아리.jpg"),
+    new bread("보문산메아리", "6,000원", "img/breads/보문산메아리.jpg",
+        '숲속의 산책 달콤한 오후의 [보문산메아리] 보문산메아리는 촉촉한 페스츄리가 돌돌말려 메아리가 되었어요. 한겹 한겹 보드라운 빵결에 골드럼 시럽이 섬세하게 발려져 있어 깊은 풍미를 느끼실 수 있답니다. 보문산의 추억이 겹겹이 담긴 대전 시민을 위한 빵.※2012년 성심당 대전역 입점 기념빵',
+        '당일섭취 권장상품',
+        '직사광선을 피하고 서늘한 곳 보관',
+        '17cm*17cm(높이10)',
+        '밀, 우유, 난류(가금류) 함유/본 제품은 난류(가금류), 우유, 메밀, 아황산류, 대두, 토마토, 호두, 땅콩, 닭고기, 쇠고기, 밀, 새우, 돼지고기, 오징어, 잣을 사용한 제품과 같은 시설에서 제조하고 있습니다.',
+        '강력(미국/캐나다) 버터시트(프랑스) 우유(원유:국산) 계란(국산)'
+    ),
     new bread("튀김소보로", "1,700원", "img/breads/튀김소보로.png"),
     new bread("명란바게트", "3,800원", "img/breads/명란바게트.png"),
     new bread("작은메아리", "3,000원", "img/breads/작은메아리.jpg"),

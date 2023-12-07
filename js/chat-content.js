@@ -247,8 +247,11 @@ var tree = [
     new messege(
         "오븐스토리",
         (bot_content) => {
-            bot_content.appendChild(brand_locate(brands[11]));
+            // bot_content.appendChild(brand_locate(brands[11]));
+            bot_content.appendChild(bread_explain(breads[0]));
         },
         [0]
     ),
 ];
+
+tree.push();

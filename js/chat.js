@@ -200,6 +200,110 @@ function brand_locate(brand) {
     result.appendChild(content_box);
     return result;
 }
+function bread_explain(bread) {
+    var result = document.createElement('div');
+    result.style.display = 'flex';
+    result.style.flexDirection = 'column';
+    var tmp = document.createElement('img');
+    tmp.id = 'gallery-image';
+    tmp.src = bread.img_address;
+    result.appendChild(tmp);
+
+    breadimformation = document.createElement('div');
+    breadimformation.classList.add('bread-imformation');
+    var breadname = document.createElement('div');
+    breadname.classList.add('bread-name');
+    breadname.innerText = bread.name;
+    breadimformation.appendChild(breadname);
+
+    var bread_description = document.createElement('div');
+    bread_description.classList.add('bread-description');
+    bread_description.innerText = bread.explain;
+    breadimformation.appendChild(bread_description);
+
+    var bread_price = document.createElement('div');
+    bread_price.classList.add('bread-price');
+    bread_price.innerText = bread.price;
+    breadimformation.appendChild(bread_price);
+    var bread_detail = document.createElement('div');
+    bread_detail.classList.add('bread-detail');
+    var bread_detail_left_border = document.createElement('div');
+    bread_detail_left_border.classList.add('detail-left-border');
+    var bread_detail_left = document.createElement('div');
+    bread_detail_left.classList.add('detail-left');
+    var bread_detail_left_font = document.createElement('div');
+    bread_detail_left_font.innerText = '유통기한';
+    bread_detail_left_font.classList.add('detail-left-font');
+    bread_detail_left.appendChild(bread_detail_left_font);
+
+    bread_detail_left_font = document.createElement('div');
+    bread_detail_left_font.innerText = '보관방법';
+    bread_detail_left_font.classList.add('detail-left-font');
+    bread_detail_left.appendChild(bread_detail_left_font);
+
+    bread_detail_left_font = document.createElement('div');
+    bread_detail_left_font.innerText = '배송비';
+    bread_detail_left_font.classList.add('detail-left-font');
+    bread_detail_left.appendChild(bread_detail_left_font);
+
+    bread_detail_left_font = document.createElement('div');
+    bread_detail_left_font.innerText = '사이즈';
+    bread_detail_left_font.classList.add('detail-left-font');
+    bread_detail_left.appendChild(bread_detail_left_font);
+    bread_detail_left_border.appendChild(bread_detail_left);
+    bread_detail.appendChild(bread_detail_left_border);
+    var bread_detail_right = document.createElement('div');
+    bread_detail_right.classList.add('detail-right');
+    var bread_detail_right_font = document.createElement('div');
+    bread_detail_right_font.innerText = bread.best_before;
+    bread_detail_right_font.classList.add('detail-right-font');
+    bread_detail_right.appendChild(bread_detail_right_font);
+
+    bread_detail_right_font = document.createElement('div');
+    bread_detail_right_font.innerText = bread.storage_method;
+    bread_detail_right_font.classList.add('detail-right-font');
+    bread_detail_right.appendChild(bread_detail_right_font);
+
+    bread_detail_right_font = document.createElement('div');
+    bread_detail_right_font.innerText = '선불 3000원';
+    bread_detail_right_font.classList.add('detail-right-font');
+    bread_detail_right.appendChild(bread_detail_right_font);
+
+    bread_detail_right_font = document.createElement('div');
+    bread_detail_right_font.innerText = bread.size;
+    bread_detail_right_font.classList.add('detail-right-font');
+    bread_detail_right.appendChild(bread_detail_right_font);
+    bread_detail.appendChild(bread_detail_right);
+    breadimformation.appendChild(bread_detail);
+    var detail_border = document.createElement('div');
+    detail_border.classList.add('detail-border');
+    breadimformation.appendChild(detail_border);
+    result.appendChild(breadimformation);
+
+    var more_box = document.createElement('div');
+    more_box.classList.add('more_Box');
+    more_information = document.createElement('div');
+    more_information.classList.add('more_information');
+    more_information.innerText = '알레르기정보';
+    more_box.appendChild(more_information);
+
+    var tmp = document.createElement('div');
+    tmp.classList.add('more_information_detail');
+    tmp.innerText = bread.allergy;
+    more_box.appendChild(tmp);
+
+    tmp = document.createElement('div');
+    tmp.classList.add('more_information');
+    tmp.innerText = '성분표시';
+    more_box.appendChild(tmp);
+
+    var tmp = document.createElement('div');
+    tmp.classList.add('more_information_detail');
+    tmp.innerText = bread.ingredient;
+    more_box.appendChild(tmp);
+    result.appendChild(more_box);
+    return result;
+}
 function init() {
     var chat_content = document.querySelector('#chat-content');
     while (chat_content.firstChild) {
