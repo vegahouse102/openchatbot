@@ -103,6 +103,7 @@ var tree = [
             tmp.style.marginBottom = "2rem";
             result.appendChild(tmp);
 
+            tmp = document.createElement('div');
             var content_scroll = document.createElement('div');
             content_scroll.classList.add('hidden-scroll');
             content_scroll.style.overflow = "scroll";
@@ -135,12 +136,27 @@ var tree = [
         "매장내 지도",
         (bot_content) => {
             var result = document.createElement('div');
-            result.classList.add('asdf');
-            result.innerText = 'asdf';
-            result.style.cursor = 'pointer';
-            result.addEventListener("click", () => {
-                console.log('success');
-            });
+            var head = document.createElement('div');
+            head.innerText = '매장내 지도를 확인하고 싶다면 아래 버튼을 눌러주세요!';
+            head.style.width = '10rem';
+            result.appendChild(head);
+
+            var content = document.createElement('div');
+            var a = document.createElement('a');
+            var button = document.createElement('div');
+            button.innerText = '매장지도확인';
+            button.style.margin = '1rem auto 0 auto';
+            button.style.cursor = 'pointer';
+            button.style.backgroundColor = '#FFE8B9';
+            button.style.padding = '0.5rem 1rem';
+            button.style.borderRadius = '0.5rem';
+            a.href = 'https://vegahouse102.github.io/DDUTI/Bread/main.html';
+            a.target = '_black';
+            a.appendChild(button);
+            content.appendChild(a);
+            content.style.display = 'flex';
+            content.style.justifyContent = 'center';
+            result.appendChild(content);
             bot_content.appendChild(result);
         },
         [0]
