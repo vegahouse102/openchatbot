@@ -22,7 +22,7 @@ var tree = [
             var bot_scroll = document.createElement('div');
             bot_scroll.style.height = "20rem";
             bot_scroll.style.paddingRight = "0.2rem";
-            for (var i = 0; i < best.length; i++) {
+            for (let i = 0; i < best.length; i++) {
                 var _bread = bread_box(breads[best[i]]);
                 if (i % 2 == 0) {
                     _bread.style.backgroundColor = "#FFE8B9";
@@ -34,6 +34,9 @@ var tree = [
                     tmp = document.createElement('hr');
                     bot_scroll.appendChild(tmp);
                 }
+                _bread.addEventListener('click', (e) => {
+                    tree_implement(best[i] + 18, 1);
+                });
             }
             result.appendChild(bot_scroll);
             result.style.width = '15rem';
@@ -57,7 +60,7 @@ var tree = [
             content_scroll.style.height = "20rem";
             content_scroll.style.paddingRight = "0.2rem";
 
-            for (var i = 0; i < breads.length; i++) {
+            for (let i = 0; i < breads.length; i++) {
                 var _bread = bread_box(breads[i]);
                 if (i % 2 == 0) {
                     _bread.style.backgroundColor = "#FFE8B9";
@@ -68,8 +71,11 @@ var tree = [
                 if (i != breads.length - 1) {
                     content_scroll.appendChild(document.createElement('hr'));
                 }
-                result.appendChild(content_scroll);
+                _bread.addEventListener('click', (e) => {
+                    tree_implement(i + 18, 1);
+                });
             }
+            result.appendChild(content_scroll);
             result.style.width = '15rem';
             bot_content.appendChild(result);
         },
@@ -193,7 +199,7 @@ var tree = [
         },
         [0]
     ),
-    new messege(
+    new messege(//10
         "성심당 대전역점",
         (bot_content) => {
             bot_content.appendChild(brand_locate(brands[4]));
@@ -230,7 +236,7 @@ var tree = [
         },
         [0]
     ),
-    new messege(
+    new messege(//15
         "우동야",
         (bot_content) => {
             bot_content.appendChild(brand_locate(brands[9]));
@@ -251,6 +257,95 @@ var tree = [
         },
         [0]
     ),
+    new messege(//18
+        "보문산메아리",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[0]));
+        },
+        [0]
+    ),
+    new messege(
+        "튀김소보로",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[1]));
+        },
+        [0]
+    ),
+    new messege(
+        "명란바게트",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[2]));
+        },
+        [0]
+    ),
+    new messege(
+        "작은메아리",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[3]));
+        },
+        [0]
+    ),
+    new messege(
+        "단팥빵",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[4]));
+        },
+        [0]
+    ),
+    new messege(
+        "토요빵",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[5]));
+        },
+        [0]
+    ),
+    new messege(
+        "소보로",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[6]));
+        },
+        [0]
+    ),
+    new messege(
+        "팡오레",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[7]));
+        },
+        [0]
+    ),
+    new messege(
+        "초코튀소",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[8]));
+        },
+        [0]
+    ),
+    new messege(
+        "판타롱부추빵",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[9]));
+        },
+        [0]
+    ),
+    new messege(
+        "월넛브레드",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[10]));
+        },
+        [0]
+    ),
+    new messege(
+        "빅매치",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[11]));
+        },
+        [0]
+    ),
+    new messege(
+        "교황님의 치즈스콘",
+        (bot_content) => {
+            bot_content.appendChild(bread_explain(breads[12]));
+        },
+        [0]
+    ),
 ];
-
-tree.push();

@@ -47,18 +47,20 @@
     width: 100%;
     padding-top:1rem;
     padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 .detail-right {
-    width: 75%;
+    width: 70%;
     padding-top:1rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 .detail-left-font {
     font-weight: bold;
     margin-bottom: 1rem;
     font-family: 'OTFPro2';
     font-size: 11pt;
+    padding: 0.1rem;
 }
 .detail-right-font {
     margin-bottom: 1rem;
