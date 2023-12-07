@@ -68,6 +68,7 @@ function bread_box(_bread) {
     result.style.display = 'flex';
     result.style.justifyContent = 'space-between';
     result.style.height = "4rem";
+    result.style.cursor = 'pointer';
     return result;
 }
 function brand_box(_brand, flag) {

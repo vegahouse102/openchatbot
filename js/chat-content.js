@@ -114,7 +114,6 @@ var tree = [
             content_scroll.classList.add('hidden-scroll');
             content_scroll.style.overflow = "scroll";
             content_scroll.style.height = "20rem";
-            content_scroll.style.width = "15rem";
             content_scroll.style.paddingRight = "0.2rem";
 
             for (let i = 0; i < brands.length; i++) {
