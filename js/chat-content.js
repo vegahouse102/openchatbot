@@ -137,7 +137,7 @@ var tree = [
         (bot_content) => {
             var result = document.createElement('div');
             var head = document.createElement('div');
-            head.innerText = '매장내 지도를 확인하고 싶다면 아래 버튼을 눌러주세요!';
+            head.innerText = '성심당 본점 매장내 지도를 확인하고 싶다면 아래 버튼을 눌러주세요!';
             head.style.width = '10rem';
             result.appendChild(head);
 
@@ -247,8 +247,7 @@ var tree = [
     new messege(
         "오븐스토리",
         (bot_content) => {
-            // bot_content.appendChild(brand_locate(brands[11]));
-            bot_content.appendChild(bread_explain(breads[0]));
+            bot_content.appendChild(brand_locate(brands[11]));
         },
         [0]
     ),

@@ -218,7 +218,7 @@ function bread_explain(bread) {
 
     var bread_description = document.createElement('div');
     bread_description.classList.add('bread-description');
-    bread_description.innerText = bread.explain;
+    bread_description.innerHTML = bread.explain;
     breadimformation.appendChild(bread_description);
 
     var bread_price = document.createElement('div');
