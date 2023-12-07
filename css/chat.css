@@ -108,6 +108,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    transition : height 0.5s ease;
 }
 .chat-button{
     background-color: #ffffff;

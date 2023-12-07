@@ -320,19 +320,11 @@ function init() {
 function tree_implement(idx, flag) {//0 first 1 not first
     var chat_content = document.querySelector('#chat-content');
     if (flag) {
-        if (chat_content.firstChild) {
-            chat_content.removeChild(chat_content.lastChild);
-        }
+        chat_content.removeChild(chat_content.lastChild);
         chat_content.appendChild(make_box(tree[idx].button_text, 0));
     }
     make_bot(idx);
     make_buttons(tree[idx].after_buttons);
-    // var result = document.querySelectorAll('.asdf');
-    // result.forEach((element) => {
-    //     element.addEventListener('click', () => {
-    //         console.log('success');
-    //     });
-    // });
 }
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
