@@ -25,7 +25,7 @@
 .bread-price {
     color: black;
     font-size: 22pt;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     font-family: 'OTFPro2';
     font-weight: bold;
     color: #BD8A00;
@@ -69,5 +69,5 @@
 }
 .detail-border {
     border-top: 1px solid gray;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
