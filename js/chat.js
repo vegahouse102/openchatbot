@@ -35,6 +35,10 @@ document.querySelector('#chat-img').addEventListener('click', (e) => {
         chat_body.style.visibility = "hidden";
     }, 200);
 });
+chat_body.addEventListener('resize', (e) => {
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    e.target.style.tran
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 function bread_box(_bread) {

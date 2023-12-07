@@ -44,7 +44,9 @@ const brands = [
 
 
     new brand("성심당 옛맛솜씨", '대전광역시 중구 대종로 480길 14', "img/brands/성심당 옛맛솜씨.JPG", 'https://www.sungsimdang.co.kr/31/24', '성심당의 노스탤지어 감성으로 탄생한 옛맛솜씨는 70년대 옛 정서가 가득한 우리 과자점', '매일 : 09:30~21:00 / 연중무휴', '042-220-4188', 'https://map.naver.com/p/entry/place/1829271382?placePath=%2Fhome&c=15.00,0,0,0,dh'),
-    new brand("성심당문화원", '대전광역시 중구 중교로73번길 11', "img/brands/성심당문화원.JPG", 'https://www.sungsimdang.co.kr/31/26', '성심당의 이념과 대전의 정서를 담은 성심당문화원입니다.', 'Think bread, Thank nature<br>1F˙2F: 메아리상점 / 3F: 메아리라운지 / 4F˙5F: 갤러리라루 / B1: 메아리곳간', '매일 : 09:00~20:30 / 연중무휴', '1588-8069', 'https://map.naver.com/p/entry/place/1068735116?placePath=%2Fhome&c=15.00,0,0,0,dh'),
+
+    new brand("성심당문화원", '대전광역시 중구 중교로73번길 11', "img/brands/성심당문화원.JPG", 'https://www.sungsimdang.co.kr/31/26', '성심당의 이념과 대전의 정서를 담은 성심당문화원입니다.', 'Think bread, Thank nature<br>1F˙2F: 메아리상점 / 3F: 메아리라운지 / 4F˙5F: 갤러리라루 / B1: 메아리곳간', '1588-8069', 'https://map.naver.com/p/entry/place/1068735116?placePath=%2Fhome&c=15.00,0,0,0,dh'),
+
     new brand("테라스키친", '대전광역시 중구 대종로480번길 15, 2F', "img/brands/테라스키친.JPG", 'https://www.sungsimdang.co.kr/31/20', '1992년 오픈한 전국 최초 베이커리 레스토랑', '매일 : 08:00~21:30 / 연중무휴', '042-220-4128', 'https://map.naver.com/p/entry/place/16043374?placePath=%2Fhome&c=15.00,0,0,0,dh'),
     new brand("플라잉팬", '대전광역시 중구 대종로 480 2F', "img/brands/플라잉팬.JPG", 'https://www.sungsimdang.co.kr/31/21', '비즈니스 미팅. 디너코스, 스테이크가 있는 프라이빗 하고 품격있는 성심당 이탈리안 레스토랑', '매일 : 11:00~21:00 / 연중무휴', '042-223-4126', 'https://map.naver.com/p/entry/place/16045148?placePath=%2Fhome&c=15.00,0,0,0,dh'),
     new brand("우동야", '대전광역시 중구 대종로480번길 15 지하상가 D가-22', "img/brands/우동야.JPG", 'https://www.sungsimdang.co.kr/31/22'
