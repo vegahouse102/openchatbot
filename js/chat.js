@@ -10,11 +10,11 @@ chat_create_button.addEventListener('click', (e) => {
         tree_implement(0, 0);
         chat_body.style.visibility = "visible";
         chat_body.style.setProperty('opacity', 1);
-        if (windowWidth >= 768)
+        if (windowWidth > 768)
             chat_body.style.setProperty('transform', 'translateY(-20px)');
     } else {
         chat_body.style.setProperty('opacity', 0);
-        if (windowWidth >= 768)
+        if (windowWidth > 768)
             chat_body.style.setProperty('transform', 'translateY(20px)');
         setTimeout(() => {
             chat_body.style.visibility = "hidden";
@@ -29,7 +29,7 @@ chat_create_button.addEventListener('mouseup', (e) => {
 });
 document.querySelector('#chat-img').addEventListener('click', (e) => {
     chat_body.style.setProperty('opacity', 0);
-    if (windowWidth >= 768)
+    if (windowWidth > 768)
         chat_body.style.setProperty('transform', 'translateY(20px)');
     setTimeout(() => {
         chat_body.style.visibility = "hidden";
