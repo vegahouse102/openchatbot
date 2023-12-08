@@ -16,6 +16,12 @@ a{
     text-decoration: none;
     color: black;
 }
+#arrow{
+    position: fixed;
+    right: 3.7rem;
+    bottom: 9rem;
+    font-size: 5rem;
+}
 #chat-content::-webkit-scrollbar {
     width: 0.2rem;
   }
@@ -125,16 +131,18 @@ a{
 }
 #chat-create-button{
     background-color: rgb(72, 203, 226);
-    height:3rem;
-    width: 3rem;
-    border-radius: 3rem;
+    height:6rem;
+    width: 6rem;
+    border-radius:6rem;
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 3rem;
+    bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1rem;
+    font-size: 5rem;
+    line-height: 2rem;
+    padding-bottom: 0.3rem;
 }
 #chat-create-button:hover{
     background-color: rgb(12, 161, 187);
