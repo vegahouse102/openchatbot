@@ -35,10 +35,6 @@ document.querySelector('#chat-img').addEventListener('click', (e) => {
         chat_body.style.visibility = "hidden";
     }, 200);
 });
-chat_body.addEventListener('resize', (e) => {
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    e.target.style.tran
-});
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 function bread_box(_bread) {
@@ -345,6 +341,9 @@ function make_bot(idx) {
 
     var chat_bot_content_box = document.createElement('div');
 
+    var chat_content = document.querySelector("#chat-content");
+    chat_content.scrollTop = chat_content.scrollHeight;
+
     tree[idx].func(chat_bot_content_box);
     chat_bot_content_box.classList.add('bot-messege');
 
@@ -387,6 +386,4 @@ function make_buttons(buttons) {
         });
         chat_buttons.appendChild(result);
     }
-    var chat_content = document.querySelector("#chat-content");
-    chat_content.scrollTop = chat_content.scrollHeight;
 }
