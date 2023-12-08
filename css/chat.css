@@ -234,4 +234,24 @@ a{
         width:100%;
         height: 100%;
     }
+    #arrow{
+        position: fixed;
+        right: 2.2rem;
+        bottom: 5rem;
+        font-size: 3rem;
+    }
+    #chat-create-button{
+        background-color: rgb(72, 203, 226);
+        height:3rem;
+        width: 3rem;
+        border-radius:3rem;
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 1rem;
+    }
 }
