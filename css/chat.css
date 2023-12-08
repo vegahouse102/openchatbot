@@ -17,9 +17,11 @@ a{
     color: black;
 }
 #arrow{
+    width:4rem;
+    height:4rem;
     position: fixed;
-    right: 3.7rem;
-    bottom: 9rem;
+    right: 4rem;
+    bottom: 10rem;
     font-size: 5rem;
 }
 #chat-content::-webkit-scrollbar {
@@ -140,9 +142,15 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+#chat-create-button div{
+    width:50px;
+    height:50px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 0.5; 
     font-size: 5rem;
-    line-height: 2rem;
-    padding-bottom: 0.3rem;
 }
 #chat-create-button:hover{
     background-color: rgb(12, 161, 187);
@@ -236,9 +244,18 @@ a{
     }
     #arrow{
         position: fixed;
-        right: 2.2rem;
-        bottom: 5rem;
-        font-size: 3rem;
+        right: 2.5rem;
+        bottom: 5.5rem;
+        height:2rem;
+        width: 2rem;
+    }
+    #chat-create-button div{
+        width:30px;
+        height:30px;
+        text-align: center;
+        vertical-align: top;
+        line-height: 0.8; 
+        font-size: 2rem;
     }
     #chat-create-button{
         background-color: rgb(72, 203, 226);
@@ -251,7 +268,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        line-height: 1rem;
+        
     }
+
 }
