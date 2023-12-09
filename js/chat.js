@@ -2,39 +2,40 @@
 var body = document.querySelector("body");
 var chat_body = document.querySelector("#chat-body");
 var chat_create_button = document.querySelector("#chat-create-button");
-var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var answer_idx = 0;
-chat_create_button.addEventListener('click', (e) => {
-    if (chat_body.style.opacity == 0) {
-        init();
-        tree_implement(0, 0);
-        chat_body.style.visibility = "visible";
-        chat_body.style.setProperty('opacity', 1);
-        if (windowWidth > 768)
-            chat_body.style.setProperty('transform', 'translateY(-20px)');
-    } else {
-        chat_body.style.setProperty('opacity', 0);
-        if (windowWidth > 768)
-            chat_body.style.setProperty('transform', 'translateY(20px)');
-        setTimeout(() => {
-            chat_body.style.visibility = "hidden";
-        }, 200);
-    }
-});
-chat_create_button.addEventListener('mousedown', (e) => {
-    chat_create_button.style.setProperty('transform', 'translateY(2px)');
-});
-chat_create_button.addEventListener('mouseup', (e) => {
-    chat_create_button.style.setProperty('transform', 'translateY(-2px)');
-});
-document.querySelector('#chat-img').addEventListener('click', (e) => {
-    chat_body.style.setProperty('opacity', 0);
-    if (windowWidth > 768)
-        chat_body.style.setProperty('transform', 'translateY(20px)');
-    setTimeout(() => {
-        chat_body.style.visibility = "hidden";
-    }, 200);
-});
+init();
+tree_implement(0, 0);
+chat_body.style.visibility = "visible";
+chat_body.style.setProperty('opacity', 1);
+// chat_create_button.addEventListener('click', (e) => {
+//     if (chat_body.style.opacity == 0) {
+
+//         if (windowWidth > 768)
+//             chat_body.style.setProperty('transform', 'translateY(-20px)');
+//     } else {
+//         chat_body.style.setProperty('opacity', 0);
+//         if (windowWidth > 768)
+//             chat_body.style.setProperty('transform', 'translateY(20px)');
+//         setTimeout(() => {
+//             chat_body.style.visibility = "hidden";
+//         }, 200);
+//     }
+// });
+// chat_create_button.addEventListener('mousedown', (e) => {
+//     chat_create_button.style.setProperty('transform', 'translateY(2px)');
+// });
+// chat_create_button.addEventListener('mouseup', (e) => {
+//     chat_create_button.style.setProperty('transform', 'translateY(-2px)');
+// });
+// document.querySelector('#chat-img').addEventListener('click', (e) => {
+//     chat_body.style.setProperty('opacity', 0);
+//     if (windowWidth > 768)
+//         chat_body.style.setProperty('transform', 'translateY(20px)');
+//     setTimeout(() => {
+//         chat_body.style.visibility = "hidden";
+//     }, 200);
+// });
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 function bread_box(_bread) {
@@ -183,17 +184,14 @@ function brand_locate(brand) {
 
     var content_box = document.createElement('div');
     content = document.createElement('a');
+    content.href = brand.naver_location;
+    content.target = '_black';
     tmp = document.createElement('div');
     tmp.innerText = '지도 보기';
+    tmp.style.textAlign = 'center';
     content.appendChild(tmp);
-    content.href = brand.naver_location;
-    content.target = '_blank';
-    content.style.textAlign = 'center';
     content_box.appendChild(content);
     content_box.style.backgroundColor = '#FFE8B9';
-    result.style.position = 'relative';
-    content_box.style.postion = 'absolute';
-    content_box.style.bottom = '0';
     result.appendChild(content_box);
     return result;
 }
