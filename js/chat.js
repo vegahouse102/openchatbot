@@ -341,13 +341,8 @@ function make_bot(idx) {
 
     var chat_bot_content_box = document.createElement('div');
 
-    var chat_content = document.querySelector("#chat-content");
-    chat_content.scrollTop = chat_content.scrollHeight;
-
     tree[idx].func(chat_bot_content_box);
     chat_bot_content_box.classList.add('bot-messege');
-
-
 
     chat_bot_content.appendChild(chat_bot_content_box);
     result.appendChild(chat_bot_content);
@@ -386,4 +381,6 @@ function make_buttons(buttons) {
         });
         chat_buttons.appendChild(result);
     }
+    var chat_content = document.querySelector("#chat-content");
+    chat_content.scrollTop = chat_content.scrollHeight;
 }
