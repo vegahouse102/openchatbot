@@ -324,7 +324,6 @@ function tree_implement(idx, flag) {//0 first 1 not first
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
     var result = document.createElement('div');
-
     var bot_img = document.createElement('img');
     bot_img.alt = 'a';
     bot_img.src = "img/성심당프로필.png";
