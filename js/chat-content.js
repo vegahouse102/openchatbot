@@ -7,7 +7,7 @@ var tree = [
             bot_content.appendChild(result);
             var result = document.createElement('div');
         }
-        , [1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 41]
+        , [1, 2, 3, 4, 5,42]
     ),
     new messege(
         "인기메뉴",
@@ -378,7 +378,7 @@ var tree = [
         "적립금 정책/패밀리 카드",
         (bot_content) => {
             var result = document.createElement('div');
-            result.innerHTML = '적립금은 상품 배송완료후 구매확정시 5% 적립금을 지급하고 있습니다. <br> 3,000점 이상부터 현금처럼 이용가능하며, 최대 50,000점까지 사용 가능합니다. <br> 24개월동안 이용하지 않을 경우 소멸되며,회원 탈퇴시에도 회원 자격이 상실되므로 보유 적립금은 모두 소멸되는 점 양해부탁드립니다. <br>단, 대전 성심당에서 운영하는 패밀리카드의 포인트는 오프라인 매장에서만 이용 가능합니다. ';
+            result.innerHTML = '적립금은 상품 배송완료후 구매확정시 5% 적립금을 지급하고 있습니다. <br><br> 3,000점 이상부터 현금처럼 이용가능하며, 최대 50,000점까지 사용 가능합니다. <br><br> 24개월동안 이용하지 않을 경우 소멸되며,회원 탈퇴시에도 회원 자격이 상실되므로 보유 적립금은 모두 소멸되는 점 양해부탁드립니다. <br><br>단, 대전 성심당에서 운영하는 패밀리카드의 포인트는 오프라인 매장에서만 이용 가능합니다. ';
             bot_content.appendChild(result);
         },
         [0]
@@ -437,7 +437,7 @@ var tree = [
         },
         [0, 41]
     ),
-    new messege(
+    new messege(//41
         "배송관련 사항",
         (bot_content) => {
             var result = document.createElement('div');
@@ -445,5 +445,23 @@ var tree = [
             bot_content.appendChild(result);
         },
         [36, 37, 38, 39, 40]
-    )
+    ),
+    new messege(//42
+        "문의사항",
+        (bot_content) => {
+            var result = document.createElement('div');
+            result.innerHTML = '문의사항 관련 품목입니다. <br>궁금하신 질문ㅇ';
+            bot_content.appendChild(result);
+        },
+        [31,32,33,34,35,41,43]
+    ),
+    new messege(//43
+        "기타",
+        (bot_content) => {
+            var result = document.createElement('div');
+            result.innerHTML = '궁금한 점이 더 있으시다면, 우리 직원들이 더 자세하게 도와드릴수 있습니다.<br><br> 함께 더 자세한 정보를 얻고 싶으시면 고객문의 전화번호 1544-8069로 문의해주세요.<br><br> 저희 직원들이 보다 친절하게 도와드리겠습니다!';
+            bot_content.appendChild(result);
+        },
+        [0,42]
+    ),
 ];

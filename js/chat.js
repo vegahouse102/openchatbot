@@ -314,12 +314,17 @@ function init() {
 }
 function tree_implement(idx, flag) {//0 first 1 not first
     var chat_content = document.querySelector('#chat-content');
+    var user;
     if (flag) {
         chat_content.removeChild(chat_content.lastChild);
-        chat_content.appendChild(make_box(tree[idx].button_text, 0));
+        user = make_box(tree[idx].button_text, 0);
+        chat_content.appendChild(user);
+        
     }
     make_bot(idx);
     make_buttons(tree[idx].after_buttons);
+    if(flag)
+        chat_content.scrollTop = user.offsetTop- 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
@@ -378,6 +383,4 @@ function make_buttons(buttons) {
         });
         chat_buttons.appendChild(result);
     }
-    var chat_content = document.querySelector("#chat-content");
-    chat_content.scrollTop = chat_content.scrollHeight;
 }
