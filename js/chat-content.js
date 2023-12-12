@@ -453,7 +453,7 @@ var tree = [
             result.innerHTML = '문의사항 관련 품목입니다. <br>궁금하신 질문이 있으신가요?';
             bot_content.appendChild(result);
         },
-        [31,32,33,34,35,41,43]
+        [31,32,43,33,34,35,41]
     ),
     new messege(//43
         "기타",
