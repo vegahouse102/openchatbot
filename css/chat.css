@@ -215,7 +215,7 @@ a{
       }
     #chat-head{
         min-height: 4%;
-        height:8%;
+        height:50px;
     }
     #chat-body{
         right: 0;
