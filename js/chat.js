@@ -323,8 +323,8 @@ function tree_implement(idx, flag) {//0 first 1 not first
     }
     make_bot(idx);
     make_buttons(tree[idx].after_buttons);
-    if(flag)
-        chat_content.scrollTop = user.offsetTop- 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    // if(flag)
+        // chat_content.scrollTop = user.offsetTop- 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 function make_bot(idx) {
     var chat_content = document.querySelector('#chat-content');
