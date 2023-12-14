@@ -199,7 +199,7 @@ a{
     margin: 1rem 1.25rem 0 0;
     font-size: 1rem;
 }
-@media(max-width : 769px){
+@media(max-width : 1300px){
     html{
         height: 100%;
     }
