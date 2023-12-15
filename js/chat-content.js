@@ -3,7 +3,7 @@ var tree = [
         "처음부터",
         function (bot_content) {
             var result = document.createElement('div');
-            result.innerHTML = "안녕하세요, 성심당입니다.<br><br> <strong>​운영시간</strong><br> 평일 10:00~18:00<br> - 점심시간(12:00~13:00) 제외 <br>- 주말,공휴일 휴무 <br><br>문의 사항을 아래에서 선택해주세요.";
+            result.innerHTML = "안녕하세요, 성심당입니다.<br><br> <strong>상담원 연결시간</strong><br> 평일 10:00~18:00<br> - 점심시간(12:00~13:00) 제외 <br>- 주말,공휴일 휴무 <br><br>문의 사항을 아래에서 선택해주세요.";
             bot_content.appendChild(result);
             var result = document.createElement('div');
         }
